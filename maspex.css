@@ -1,0 +1,177 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body { width: 100%;
+            height: 100%;
+}
+
+body{ margin: 0;
+
+}
+
+#container {
+    margin: auto;
+    position: relative;
+    background-image: url('background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 709px;
+    width: 810px;
+    z-index: 1;
+}
+
+#instructions>h3 {
+    margin-top: 0;
+}
+
+.instructionsMessage{ 
+    color: red;
+    font-size: 1.7em;
+    text-align: center;
+    font-family: 'Rammetto One', cursive;
+    font-style: italic;
+}
+
+#initialize{
+    position: absolute;
+    top:50%;
+    left: 45%;
+    font-family: 'Rammetto One', cursive;
+    font-style: italic;
+    color: red;
+    text-align: center;
+    height: 40px;
+    width: 90px;
+    cursor: pointer; 
+}
+
+.start {     
+    display: none;
+}
+
+.info{ position: absolute;
+       top:0;    
+}
+
+#scoresheet > p {
+      color: black;
+     font-family: 'Rammetto One', cursive;
+      font-size: 1.1em;
+      font-weight: bold;
+}
+
+.basketStart {
+    background-image: url("basket.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 255px;
+    z-index: 100;
+}
+
+.move{
+   transform: translateY(650px);
+}
+
+.greenEgg{
+    position: absolute;
+    top: -45px;
+    background-image: url("egg1.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+    
+}
+
+.redEgg{
+    position: absolute;
+    top: -45px;
+    background-image: url("egg2.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;  
+}
+
+.blueEgg{
+    position: absolute;
+    top: -45px;
+    background-image: url("egg3.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+}
+
+.orangeEgg{
+    position: absolute;
+    top: -45px;
+    background-image: url("egg4.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+}
+
+purpleEgg{
+    position: absolute;
+    top: -45px;
+    background-image: url("egg5.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+}
+
+.rockOne{
+    position: absolute;
+    top: -45px;
+    background-image: url("rock1.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+    z-index: 50;
+    
+}
+
+.rockTwo{
+    position: absolute;
+    top: -45px;
+    background-image: url("rock2.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+    
+}
+
+.rockThree{
+    position: absolute;
+    top: -45px;
+    background-image: url("rock3.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+    
+}
+
+.salatini{
+    position: absolute;
+    top: -45px;
+    background-image: url("salatini.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 45px;
+}
