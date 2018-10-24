@@ -31,7 +31,7 @@ function countdown(){
     
 };
 
-function keyDownHandler(e) {   // event handler 1
+function keyDownHandler(e) {   // event handler 1  // check event listener call times;
         const key = e.key;
         if(e.keyCode == 39) {
             right = true;
@@ -53,7 +53,7 @@ function keyUpHandler(e) { // event handler 2
 
 function moveBasket() {
     if(right && basketX <= container.offsetWidth-basket.offsetWidth ) {
-        basketX += 10;
+        basketX += 10; // moving problem
         basket.style.left = basketX + "px";
     }
     else if(left && basketX >= 0 ) {
@@ -72,18 +72,18 @@ function intersection(fallingElement, theBasket){
     else {      return false;}
 }
 
-function spawn(theClass){
+function spawn(){
 	let x = Math.floor(Math.random() * 12)   //  x will be the random index in the array holding the falling elements type - eggs, rocks and life 
 	let type = classes[x];
     let newElement = document.createElement("div");
     let newElementX;
     newElement.className = "fallingElement"; 
 	newElement.style.backgroundImage = "url(" + type + ".png)";
-    newElement.style.left = Math.floor(Math.random()* container.offsetWidth - newElement.offsetWidth + 1 -5 ) + "px";
-    newElement.style.transition = "transform " + 3500 + "ms linear"; 
+    newElement.style.left = Math.floor(Math.random()* container.offsetWidth - newElement.offsetWidth + 1) + "px";
+    newElement.style.transition = "transform " + 3500 + "ms linear"; // 3500 -> transition time -> variable
     container.appendChild(newElement);
     setTimeout(function(){  newElement.classList.add ( "move" ) ;  // add transform to the transition -> perform falling
-                         setTimeout(function(){  if( intersection(newElement, basket ) ) { // check which element is intersecting with the basket
+                            setTimeout(function(){  if( intersection(newElement, basket ) ) { // check which element is intersecting with the basket
 																				           if( /egg/.test(type) ) {
 																					                              		scorePoints++; 
 																								                        document.getElementById("score").innerHTML = scorePoints;
@@ -111,7 +111,7 @@ function spawn(theClass){
                                                                         endGame();
                                                                         clearInterval(counter);
 														                      }                
-                                         },3220);
+                                         },3220); // the moment of the evaluation of the falling element's coord;
                      }, 1000 );      
     // considering full distance 650 px, and 600px meeting point with basket -> time elapsed till the meeting point would be 92,59% of the full time of the transition ( or 100/(d1/d2) if we change distances ) ; 
    $(newElement).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function(event) { 
@@ -141,7 +141,7 @@ $('#initialize').click(function() {
                                       spawn();
                                     }
                         }, 1000);
- }); 
+ });   // check why loop is needed;
 
 
  $('#restart').click( function(){
