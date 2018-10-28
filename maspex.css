@@ -37,10 +37,10 @@ body{ margin: 0;
     font-style: italic;
 }
 
-#initialize{
-    position: absolute;
+
+ .button{
+	position: absolute;
     top:50%;
-    left: 45%;
     font-family: 'Rammetto One', cursive;
     font-style: italic;
     color: red;
@@ -48,8 +48,18 @@ body{ margin: 0;
     height: 40px;
     width: 90px;
     cursor: pointer; 
+ }
+
+#initialize{
+    left: 45%;
 }
 
+#share{
+	 left: 30%;
+}
+#restart {
+	  left: 60%;
+}
 .start {     
     display: none;
 }
@@ -81,97 +91,11 @@ body{ margin: 0;
    transform: translateY(650px);
 }
 
-.greenEgg{
-    position: absolute;
+.fallingElement {
+	position: absolute;
     top: -45px;
-    background-image: url("egg1.png");
     background-position: center; 
     background-repeat: no-repeat;
     width: 35px;
-    height: 45px;
-    
-}
-
-.redEgg{
-    position: absolute;
-    top: -45px;
-    background-image: url("egg2.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;  
-}
-
-.blueEgg{
-    position: absolute;
-    top: -45px;
-    background-image: url("egg3.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-}
-
-.orangeEgg{
-    position: absolute;
-    top: -45px;
-    background-image: url("egg4.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-}
-
-purpleEgg{
-    position: absolute;
-    top: -45px;
-    background-image: url("egg5.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-}
-
-.rockOne{
-    position: absolute;
-    top: -45px;
-    background-image: url("rock1.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-    z-index: 50;
-    
-}
-
-.rockTwo{
-    position: absolute;
-    top: -45px;
-    background-image: url("rock2.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-    
-}
-
-.rockThree{
-    position: absolute;
-    top: -45px;
-    background-image: url("rock3.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
-    
-}
-
-.salatini{
-    position: absolute;
-    top: -45px;
-    background-image: url("salatini.png");
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 35px;
-    height: 45px;
+    height: 45px; 	
 }
