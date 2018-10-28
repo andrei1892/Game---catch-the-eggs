@@ -152,7 +152,7 @@ $('#share').click ( function() {
   								FB.ui({
     									method: 'share',
     									display: 'popup',
-    									href: 'https://facebook.com/',
+    									href: 'https://developers.facebook.com/docs/',
 										}, function(response){});
 });
 
